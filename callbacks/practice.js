@@ -28,6 +28,10 @@
 */
 
 // Code Here 
+function first(arr,cb){
+cb(arr[0])
+}
+first(firstName, names[0]);
 
 // Do not edit the code below.
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
@@ -48,6 +52,10 @@ first(names, function(firstName){
 */
 
 //Code Here
+function last(arr,cb) {
+  cb(arr[arr.length - 1])
+}
+last(lastName, names[names.length - 1])
 
 // Do not edit the code below.
 last(names, function(lastName){
@@ -66,6 +74,10 @@ last(names, function(lastName){
 */
 
 //Code Here
+function multiply (num1,num2,cb){
+  cb(num1 * num2)
+}
+multiply(answer,4,3);
 
 // Do not edit the code below.
 multiply(4, 3, function(answer){
@@ -85,6 +97,16 @@ multiply(4, 3, function(answer){
 */
 
 //Code Here 
+function contains(arr,name,cb){
+  for (let i = 0; i < arr.length; i++){
+     if (arr[i] === name) {
+        cb(true);
+     } else {
+        cb(false);
+  }
+}
+}
+//contains(names,'Colt',result);
 
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
